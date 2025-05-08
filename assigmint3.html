@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assyrian Heritage Registration</title>
+  
+  <link rel="icon" href="india.png" type="image.png" />
+  <style>
+        body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position: center;
+    color: red;
+ 
+}
+
+        nav {
+        background-color: rgb(209, 225, 207);
+        padding: 10px;
+        text-align: center;
+      }
+      nav a {
+        text-decoration: none;
+        margin-right: 15px;
+        color: green;
+        font-weight: bold;
+      }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #21201f;
+  color: #2d1c0f;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #a27c5e;
+  color: rgb(156, 146, 146);
+  padding: 200px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: rgb(208, 187, 187);
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background: #fff8ef;
+  background-image: url(background.jpg);
+  
+}
+
+h1 {
+  color: #fff9f5;
+}
+
+form {
+  background: #eee5e5;
+  
+  background-repeat: no-repeat;
+
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #af681b;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox label {
+  font-weight: normal;
+}
+
+button {
+  background-color: #704a2b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5e3c23;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  background: #d9c8b6;
+  color: #3a2b1a;
+}
+  </style>
+</head>
+<body>
+  <img src="img.png" height="80" width="1400px">
+  <nav>
+        <a href="https://joinindianarmy.nic.in/index.htm">Home</a>
+        <a href="https://joinindianarmy.nic.in/indian-army.htm">About india army</a>
+        <a href="https://joinindianarmy.nic.in/contact-us.htm">Contact</a>
+      </nav>
+    </aside>
+    
+    <main class="content">
+      <img src="img2.png" height="200px" width="1400px">
+      <h1>JOIN INDIAN ARMY</h1>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label>Birth Date</label>
+          <input type="date" name="birthdate" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select name="gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>father Name</label>
+          <input type="text" name="name">
+        </div>
+
+        <div class="form-group">
+          <label>Mother Name</label>
+          <input type="text" name="name">
+        </div>
+
+        <div class="form-group">
+          <label>Upload  photo</label>
+          <input type="file" name="crest">
+        </div>
+
+        <div class="form-group">
+          <label>hight(80–90)</label>
+          <input type="range" name="height" min="80" max="90">
+        </div>
+
+        <div class="form-group">
+          <label>Generation Status</label>
+          <input type="number" name="generation" min="1" max="10">
+        </div>
+        <div class="form-group">
+          <label>marital status</label>
+          <select name="marrage" required>
+            <option value="">Select status</option>
+            <option value="married">married</option>
+            <option value="unmarried">unmarried</option>
+  
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>email(optional)</label>
+          <input type="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label></label>
+          <input type="text" name="language">
+        </div>
+
+        <div class="form-group">
+          <label>Phone number</label>
+          <input type="number" name="number">
+        </div>
+        <label>
+        <div class="form-group checkbox">
+         
+            <input type="checkbox" name="agree" required>I agree to the terms and conditions
+          </label>
+        </div>
+
+        <div class="form-group submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>
+  <footer>&copy; 2025 INDIA ARMY</footer>
+</body>
+</html>

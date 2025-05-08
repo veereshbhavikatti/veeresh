@@ -1,0 +1,128 @@
+
+<form action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Ashurbanipal" required maxlength="100" minlength="2" autofocus>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required autocomplete="email">
+  
+    <label for="birthdate">Birth Date:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+  
+    <label for="photo">Upload Family Crest:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+  
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required minlength="6">
+  
+    <label for="color">Favorite Traditional Color:</label>
+    <input type="color" id="color" name="color" value="#8b5e3c">
+  
+    <label for="range">Cultural Knowledge (0–10):</label>
+    <input type="range" id="range" name="knowledge" min="0" max="10" value="5" step="1">
+  
+    <label for="agree">Agree to share your data:</label>
+    <input type="checkbox" id="agree" name="agree" required>
+  
+    <label for="submit">Submit:</label>
+    <button type="submit" formaction="/custom-submit" formmethod="post">Submit</button>
+  
+  </form>
+  
+  Step 6: Add More Input Types and Use select, textarea, datalist
+  
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender" required>
+    <option value="">--Select--</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+  
+  <label for="desc">Tell us about your ancestry:</label>
+  <textarea id="desc" name="desc" rows="4" maxlength="500"></textarea>
+  
+  <label for="language">Preferred Language:</label>
+  <input list="languages" id="language" name="language">
+  <datalist id="languages">
+    <option value="Assyrian Neo-Aramaic">
+    <option value="Arabic">
+    <option value="English">
+  </datalist>
+  
+   Step 7: Add Footer
+  
+  
+  Step 8: Add CSS Styling
+  Now, wrap everything up with nice Assyrian-themed CSS.
+  
+  Inside the <head>, include:
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6ef;
+      color: #4d3319;
+      margin: 0;
+    }
+  
+    header {
+      background-color: #8b5e3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    nav {
+      background-color: #e0b084;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4d3319;
+    }
+  
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  
+    form {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 15px;
+    }
+  
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #8b5e3c;
+      color: white;
+    }
+  
+    input, select, textarea, button {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+  
+    button {
+      background-color: #8b5e3c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #a66a42;
+    }
+  </style>
